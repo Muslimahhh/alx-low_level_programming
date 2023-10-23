@@ -1,11 +1,18 @@
-#include <unistd.h>
+#include <stdio.h>
 #include <string.h>
-
+#include <unistd.h>
+/**
+ * main - main block
+ * Return: 1
+ */
 int main(void)
 {
-  char my_string[];
+	int s;
 
-  my_string[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-  write(STDERR_FILENO, my_string, strlen(my_string));
-  return (0);
+	s = strlen("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+
+	write(2,
+	      "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",
+	      s);
+	return (1);
 }
