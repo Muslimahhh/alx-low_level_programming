@@ -1,60 +1,43 @@
 #include "main.h"
 
 /**
- * print_number - prints a number using _putchar
- * @n: number to print
- *
- * Return: void
+ * print_number - prints out a number
+ *@n: number to be printed
  */
+
 void print_number(int n)
 {
-	unsigned int un = 0;
+int  y;
 
-	if (n < 0)
-	{
-		if (n < 1000000000)
-			n = -n;
-		un = n;
-		_putchar(45);
-		num_to_char(n);
-	}
-	else
-	{
-		un = n;
-		num_to_char(un);
-	}
-}
-
-/**
- * num_to_char - transforms a number with 1 or more digits into a char
- * @n: number to print
- *
- * Return: void
- */
-void num_to_char(unsigned int n)
+if (n > 9 && n < 19)
 {
-	unsigned int d = 10;
-
-	if (n < d)
-	{
-		_putchar('0' + n);
-	}
-	else
-	{
-		while (n >= d)
-		{
-			d *= 10;
-			if (d == 1000000000)
-				break;
-		}
-		if (!(d == 1000000000) || n == 123456789)
-			d /= 10;
-		_putchar('0' + n / d);
-		while (d != 10)
-		{
-			d /= 10;
-			_putchar('0' + (n / d) % 10);
-		}
-		_putchar('0' + n % 10);
-	}
+while (n > 9)
+{
+n = n % 10;
+}
+_putchar(1 + '0');
+_putchar(n + '0');
+}
+else if (n < 0)
+{
+y = n * -1;
+_putchar('-');
+if (y > 9)
+{
+while (y > 9)
+{
+n = y % 10;
+}
+_putchar(9 + '0');
+_putchar(n + '0');
+}
+else
+{
+_putchar(y + '0');
+}
+}
+else
+{
+_putchar(n + '0');
+}
 }
