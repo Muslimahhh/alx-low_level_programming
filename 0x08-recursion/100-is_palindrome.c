@@ -38,7 +38,7 @@ int _strlen_recursion(char *s)
  * @len: length of string
  * @i: counter variable
  * Return: int
- */
+ */ 
 int palindrome_check(char *s, int len, int i)
 {
 	if (len == i)
