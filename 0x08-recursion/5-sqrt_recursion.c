@@ -1,9 +1,9 @@
 #include "main.h"
 /**
   * _is_sqrt - checks if a number is a prime
-  * @x: inter arg 1
+  * @x: inter arg 1 
   * @y: int arg 2
-  * Return: number thats a square root
+  * Return: number that is a square root
   */
 int _is_sqrt(int x, int y)
 {
