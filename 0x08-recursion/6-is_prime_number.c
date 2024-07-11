@@ -3,7 +3,7 @@
   * _is_divide - checks if a number is a prime
   * @x: inter arg 1
   * @y: int arg 2
-  * Return: prime number of int
+  * Return: prime number of int 
   */
 int _is_divide(int x, int y)
 {
