@@ -13,7 +13,7 @@ int _is_divide(int x, int y)
 		return (1);
 	return (_is_divide(x, y + 1));
 }
-/**
+/** 
   * is_prime_number - checks for prime number of an int
   * @n: Integer argument
   * Return: inter prime number
